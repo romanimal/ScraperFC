@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Market Dashboard</title>
+    <style>
+      table {border-collapse: collapse; width: 80%; margin: auto;}
+      th, td {border: 1px solid #ddd; padding: 8px; text-align: center;}
+      th {background-color: #f2f2f2;}
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align:center;">Market Dashboard</h1>
+    <table>
+      <tr>
+        <th>Ticker</th>
+        <th>Price</th>
+        <th>%&#916;</th>
+        <th>P%</th>
+        <th>52Wk Range</th>
+      </tr>
+      {% for row in data %}
+      <tr>
+        <td>{{ row.ticker }}</td>
+        <td>{{ row.price }}</td>
+        <td>{{ row.percent_change }}</td>
+        <td>{{ row.percent_52w_high }}</td>
+        <td>{{ row['52w_range'] }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>

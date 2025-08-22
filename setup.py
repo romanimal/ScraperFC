@@ -22,7 +22,8 @@ setuptools.setup(
     ],
     install_requires = [
         'selenium', 'webdriver-manager', 'pandas', 'numpy', 'datetime',
-        'ipython', 'requests', 'bs4', 'lxml', 'tqdm',
+        'ipython', 'requests', 'bs4', 'lxml', 'tqdm', 'Flask',
+        'APScheduler', 'yfinance', 'pytz'
     ],
     classifiers = [
         'Programming Language :: Python :: 3',
