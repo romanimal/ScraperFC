@@ -8,4 +8,7 @@ requests
 bs4
 lxml
 tqdm
-ScraperFC
+Flask
+APScheduler
+yfinance
+pytz
